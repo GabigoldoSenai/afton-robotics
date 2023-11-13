@@ -1,0 +1,17 @@
+.navbar{
+    background: linear-gradient(var(--dark-blue) 0%, rgba(0,0,0,.0) 100%);
+    display:flex;
+    justify-content: center;
+    height:135px;
+}
+
+.navbar>ul{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:100px;
+}
+
+.nav-link>img{
+    max-height: 75px;
+}

@@ -1,0 +1,94 @@
+@import url(reset.css);
+@import url(components/navbar.css);
+@import url(components/home.css);
+@import url(components/info.css);
+@import url(components/services.css);
+@import url(components/about-us.css);
+@import url(components/join-us.css);
+@import url(components/faq.css);
+@import url(components/footer.css);
+
+:root{
+    --white-font:#D4EBFF;
+    --baby-blue:#84A2E2;
+    --baby-blue-opacity:#84a2e286;
+    --blue:#305BB7;
+    --dark-blue:#1A2542;
+
+    --lavender:#793292;
+
+    --funtime-foxy-color:rgba(164, 40, 121, 100%);
+    --funtime-freddy-color:rgba(199, 112, 166, 100%);
+    --bonbon-color: #305CB8;
+    --ballora-color:#45369D;
+    --circus-baby-color:#A9283D;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: gray;
+}
+
+h1,h2,h3{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+
+p, a, li, button{
+    font-family:'Cute Font', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+h1,h2,h3,p,a,li, button{
+    color:var(--white-font);
+    text-shadow: 0px 0px 15px var(--blue);
+    -webkit-text-stroke: 1px var(--baby-blue-opacity);
+}
+
+a:hover,button:hover{
+    color: var(--baby-blue);
+    text-shadow: 0px 0px 10px var(--white-font);
+}
+
+.btn-section{
+    display:inline-flex;
+    gap: 45px;
+}
+
+button{
+    height: 50px;
+    border: 1px solid var(--white-font);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.25);
+    padding: 0 31px;
+    cursor:pointer;
+    background: rgba(255, 255, 255, 0.00);
+}
+
+.action-btn{
+    background: linear-gradient(180deg, #84A2E2 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.info-btn {
+    display: flex;
+    align-items: center;
+    padding-inline:  0;
+    padding-block: 0;
+    background-color: rgba(255, 255, 255, 0.00);
+}
+
+.btn-text {
+    padding: 0 17px;
+}
+
+.material-symbols-outlined{
+    background: linear-gradient(180deg, #84A2E2 0%, rgba(255, 255, 255, 0.00) 100%);
+display:flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 100%;
+}
