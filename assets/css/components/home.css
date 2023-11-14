@@ -1,10 +1,9 @@
 .home{
     width: 100vw;
-    height: 100vh;
+    height: 98vh;
     display:flex;
     align-content: center;
     justify-content: flex-start;
-    overflow: hidden;
     background-image: url(../../images/AftonRobotics_nologo.mp4);
 }
 
@@ -14,6 +13,8 @@
     top: 0;
     z-index:-1;
     object-fit: cover;
+    height: 100%;
+    width: 100vw;
 }
 
 h1{
@@ -24,8 +25,11 @@ h1{
     display:flex;
     margin: 0 10%;
     justify-content: center;
-    flex-direction: column;
     gap: 40px;
+}
+
+.home>.content-section{
+    flex-direction: column;
 }
 
 .text-group{
@@ -36,16 +40,3 @@ h1{
 }
 
 
-@media (min-aspect-ratio: 16/9){
-    .afton-robotics-mp4{
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-    .afton-robotics-mp4{
-        width: auto;
-        height: 110%;
-    }
-}

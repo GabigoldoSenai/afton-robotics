@@ -1,3 +1,24 @@
 .info{
-    background-color: var(--blue);
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(90deg, var(--dark-blue) 0%, var(--blue) 15%, var(--blue) 88%, var(--dark-blue) 100%);
+    display:flex;
+    gap: 40px;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.info>.content-section>img{
+    height: auto;
+    width: 200px;
+}
+
+.info>.content-section{
+    align-items: center;
+}
+
+
+.info>.content-section>article{
+    width: 80%;
 }

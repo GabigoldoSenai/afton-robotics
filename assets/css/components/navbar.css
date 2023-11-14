@@ -20,3 +20,10 @@
 .nav-link>img{
     max-height: 75px;
 }
+
+
+.nav-link:hover{
+    color: var(--baby-blue);
+    text-shadow: 0px 0px 10px var(--white-font);
+    font-size: 120%;
+}
