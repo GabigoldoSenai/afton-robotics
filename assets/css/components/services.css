@@ -36,7 +36,7 @@
 .animatronic-card{
     width: 165px;
     height: 225px;
-    background-color: var(--dark-blue);
+    background-color: var(--blue);
 }
 
 .animatronic-card>.fade{
