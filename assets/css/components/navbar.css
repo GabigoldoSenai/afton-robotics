@@ -1,8 +1,13 @@
 .navbar{
     background: linear-gradient(var(--dark-blue) 0%, rgba(0,0,0,.0) 100%);
     display:flex;
+    align-items: center;
     justify-content: center;
+    position:fixed;
+    top:0;
+    left: 0;
     height:135px;
+    width: 100vw;
 }
 
 .navbar>ul{

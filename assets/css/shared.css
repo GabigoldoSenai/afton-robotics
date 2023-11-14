@@ -57,6 +57,7 @@ a:hover,button:hover{
 .btn-section{
     display:inline-flex;
     gap: 45px;
+    flex-flow:row wrap;
 }
 
 button{
