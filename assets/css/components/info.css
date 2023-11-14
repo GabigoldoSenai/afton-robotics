@@ -1,7 +1,7 @@
 .info{
     width: 100vw;
-    height: auto;
-    background: linear-gradient(90deg, var(--dark-blue) 0%, var(--blue) 15%, var(--blue) 88%, var(--dark-blue) 100%);
+    height: 340px;
+    background: linear-gradient(90deg, var(--dark-blue) 0%, var(--blue) 25%, var(--blue) 75%, var(--dark-blue) 100%);
     display:flex;
     gap: 40px;
     flex-flow: row;
@@ -10,8 +10,9 @@
 }
 
 .info>.content-section>img{
-    height: auto;
+    height: 200px;
     width: 200px;
+    mix-blend-mode: plus-lighter;
 }
 
 .info>.content-section{
@@ -21,4 +22,7 @@
 
 .info>.content-section>article{
     width: 80%;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
 }

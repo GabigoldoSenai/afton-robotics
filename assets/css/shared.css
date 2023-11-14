@@ -29,12 +29,20 @@ html{
 }
 
 body{
-    background-color: gray;
+    background-color: var(--dark-blue);
 }
 
 h1,h2,h3{
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
+}
+
+h2{
+    font-size:30px;
+}
+
+h3{
+    font-size: 20px;
 }
 
 p, a, li, button{
@@ -60,13 +68,16 @@ button{
     height: 50px;
     border: 1px solid var(--white-font);
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.25);
-    padding: 0 31px;
     cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.00);
 }
 
 .action-btn{
     background: linear-gradient(180deg, #84A2E2 0%, rgba(255, 255, 255, 0.00) 100%);
+    width: 175px;
 }
 
 .info-btn {
@@ -81,7 +92,7 @@ button{
     padding: 0 17px;
 }
 
-.material-symbols-outlined{
+.info-btn>.material-symbols-outlined{
     background: linear-gradient(180deg, #84A2E2 0%, rgba(255, 255, 255, 0.00) 100%);
 display:flex;
 justify-content: center;

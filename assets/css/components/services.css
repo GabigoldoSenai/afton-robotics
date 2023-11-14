@@ -1,0 +1,53 @@
+.services{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services>.content-section{
+    display:flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+}
+
+.header>button{
+    width: 50px;
+    height: 50px;
+}
+
+.arrow-btn{
+    background: linear-gradient( #84A2E2 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.cards-section{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+.animatronic-card{
+    width: 165px;
+    height: 225px;
+    background-color: var(--dark-blue);
+}
+
+.animatronic-card>.fade{
+    background: linear-gradient( var(--dark-blue) 0%, rgba(255, 255, 255, 0.00) 100%);
+    position:absolute;
+    width: 165px;
+    height: 225px;
+    background-size: cover;
+    background-position: center;
+}
+
+.animatronic-card:nth-child(1){
+    background-image: url(../../images/funt-foxy-thumbnail.png);
+}

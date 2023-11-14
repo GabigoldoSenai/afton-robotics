@@ -35,8 +35,8 @@
             </article>
 
             <section class="btn-section">
-                <button class="action-btn">BE A PARTNER</button>
-                <button class="info-btn">
+                <button class="action-btn" onclick="document.getElementById('join-us').scrollIntoView()">BE A PARTNER</button>
+                <button class="info-btn" onclick="document.getElementById('faq').scrollIntoView()">
                     <span class="btn-text">KNOW MORE</span>
                     <span class="material-symbols-outlined">
                             chevron_right
@@ -59,48 +59,64 @@
     </div>
 
     <div class="services" id="services">
+        <section class="content-section">
+            <section class="header">
+                <h2>Meet our animatronics!</h2>
+                <button class="arrow-btn" id="btn-previous" onclick="previousCard()"><span class="material-symbols-outlined">
+                    chevron_left
+                    </span></button>
+                <button class="arrow-btn" id="btn-next" onclick="nextCard()"><span class="material-symbols-outlined">
+                    navigate_next
+                    </span></button>
+            </section>
 
-        <section class="header">
-            <h2>Meet our animatronics!</h2>
-            <button class="btn-left"><span class="material-symbols-outlined">
-                chevron_left
-                </span></button>
-            <button class="btn-right"><span class="material-symbols-outlined">
-                navigate_next
-                </span></button>
+            <section class="cards-section">
+                <div class="animatronic-card">
+                    <div class="fade"></div>
+                    <img src="./assets/images/" alt="">
+                </div>
+                <div class="animatronic-card">
+                    <div class="fade"></div>
+                    <img src="./assets/images/" alt="">
+                </div>
+                <div class="animatronic-card">
+                    <div class="fade"></div>
+                    <img src="./assets/images/" alt="">
+                </div>
+                <div class="animatronic-card">
+                    <div class="fade"></div>
+                    <img src="./assets/images/" alt="">
+                </div>
+                <div class="animatronic-card">
+                    <div class="fade"></div>
+                    <img src="./assets/images/" alt="">
+                </div>
+            </section>
+            <span class="horizontal-line"></span>
+    
+            <section class="text-section">    
+                <article class="resume">
+                    <h2>Funtime Foxy</h2>
+                    <p>Funtime Foxy is an animatronic character known for its playful and entertaining demeanor. With its charming appearance and versatile skills, Funtime Foxy stands out as a highlight in the world of animatronic entertainment.</p>
+                </article>
+                <article class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Charming Appearance</li>
+                        <li>Interactive Performances</li>
+                        <li>Motion Sensing Prowess</li>
+                    </ul>
+                </article>
+            </section>
         </section>
-        
-        <section class="cards-section">
-            <div class="animatronic-card"></div>
-            <div class="animatronic-card"></div>
-            <div class="animatronic-card"></div>
-            <div class="animatronic-card"></div>
-            <div class="animatronic-card"></div>
-        </section>
-        <hr>
 
-        <section class="text-section">    
-            <article class="resume">
-                <h2>Funtime Foxy</h2>
-                <p>Funtime Foxy is an animatronic character known for its playful and entertaining demeanor. With its charming appearance and versatile skills, Funtime Foxy stands out as a highlight in the world of animatronic entertainment.</p>
-            </article>
-            <article class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Charming Appearance</li>
-                    <li>Interactive Performances</li>
-                    <li>Motion Sensing Prowess</li>
-                </ul>
-            </article>
-        </section>
     </div>
 
     <div class="about-us" id="about-us">
+    <section class="content-section">
         <section class="william-frame">
-            <div class="img">
                 <img src="assets/images/william-afton.png" alt="I always come back">
                 <h2 class="william-name">William Afton</h2>
-            </div>
         </section>
 
         <section class="text-frame">
@@ -113,49 +129,61 @@
                 <p>His commitment to excellence shines in the meticulous design and engineering of his animatronic creations, seamlessly blending advanced robotics with artistic creativity. Fortunately, just like his creations, he springs into action and always comes back with innovations!</p>
             </article>
         </section>
+    </section>
 
     </div>
 
     <div class="join-us" id="join-us">
+        <section class="content-section">
+            <section class="text-frame">
+                <article>
+                    <img src="assets/images/style-frame.png" alt="">
+                    <h2>Join us as a Partner!</h2>
+                    <hr>
+                    <p>Your participation as a partner is not just a financial investment but an exclusive entry to witness firsthand the innovations that will shape tomorrow.</p>
 
-        <section class="text-frame">
-            <article>
-                <img src="assets/images/style-frame.png" alt="">
-                <h2>Join us as a Partner!</h2>
-                <hr>
-                <p>Your participation as a partner is not just a financial investment but an exclusive entry to witness firsthand the innovations that will shape tomorrow.</p>
-
-                <p>Furthermore, as part of the Afton Robotics family, you will have access to exclusive events, private demonstrations, and the opportunity to interact directly with the behind-the-scenes of our animatronic creations.</p> 
+                    <p>Furthermore, as part of the Afton Robotics family, you will have access to exclusive events, private demonstrations, and the opportunity to interact directly with the behind-the-scenes of our animatronic creations.</p> 
+                        
+                    <p>Together, we can build a future where imagination meets technology, providing unforgettable experiences for generations to come.</p>
                     
-                <p>Together, we can build a future where imagination meets technology, providing unforgettable experiences for generations to come.</p>
-                
-                <p>His commitment to excellence shines in the meticulous design and engineering of our animatronic creations, seamlessly blending advanced robotics with artistic creativity. Fortunately, just like his creations, he springs into action and always comes back with innovations!</p>
-            </article>
+                    <p>His commitment to excellence shines in the meticulous design and engineering of our animatronic creations, seamlessly blending advanced robotics with artistic creativity. Fortunately, just like his creations, he springs into action and always comes back with innovations!</p>
+                </article>
 
-            <section class="btn-section">
-                <button class="btn-action">BE A PARTNER</button>
-                <button class="btn-info">KNOW MORE</button>
+                <section class="btn-section">
+                    <button class="action-btn" onclick="document.getElementById('join-us').scrollIntoView()">BE A PARTNER</button>
+                    <button class="info-btn" onclick="document.getElementById('faq').scrollIntoView()">
+                        <span class="btn-text">KNOW MORE</span>
+                        <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+    
+                    </button>
+                </section>
             </section>
         </section>        
     </div>
     
     <div class="faq" id="faq">
-        <div class="faq-card">
-            <p>Question Lorem Ipsum sit dolor?</p>
-            <button class="btn-more"><span class="material-symbols-outlined">
-                add
-                </span>
-            </button>
-            <button class="btn-less"><span class="material-symbols-outlined">
-                remove
-                </span></button>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim aliquam est. Curabitur lobortis porttitor tristique. Ut aliquam porta ex ut vehicula. Suspendisse faucibus sodales mauris, in posuere nisi blandit id. Aliquam mauris magna, pretium in eros sit amet, laoreet sodales lacus. <br>
-                Suspendisse non dapibus erat. Suspendisse cursus mauris ipsum, a molestie tellus volutpat sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-        </div>
+        <section class="content-section">
+                <div class="faq-card">
+                    <p>Question Lorem Ipsum sit dolor?</p>
+                    <button class="btn-more"><span class="material-symbols-outlined">
+                        add
+                        </span>
+                    </button>
+                    <button class="btn-less"><span class="material-symbols-outlined">
+                        remove
+                        </span></button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim aliquam est. Curabitur lobortis porttitor tristique. Ut aliquam porta ex ut vehicula. Suspendisse faucibus sodales mauris, in posuere nisi blandit id. Aliquam mauris magna, pretium in eros sit amet, laoreet sodales lacus. <br>
+                        Suspendisse non dapibus erat. Suspendisse cursus mauris ipsum, a molestie tellus volutpat sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </div>
+        </section>
     </div>
 
     <footer class="footer">
 
     </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
