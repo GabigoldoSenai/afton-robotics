@@ -32,6 +32,11 @@ body{
     background-color: var(--dark-blue);
 }
 
+::selection{
+    background-color: var(--lavender);
+    color: var(--white-font);
+}
+
 h1,h2,h3{
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;

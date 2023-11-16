@@ -31,15 +31,34 @@
     display: flex;
     flex-flow: row nowrap;
     gap: 10px;
+    margin: 40px;
 }
 
 .animatronic-card{
+    position: relative;
     width: 165px;
     height: 225px;
     background-color: var(--blue);
+    background-position: center;
+    background-size: cover;
+    transition: .3s;
 }
 
-.animatronic-card>.fade{
+.animatronic-card:hover,
+.animatronic-card:focus{
+    transform: scale(1.3);
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+
+
+.animatronic-card:hover .card-fade,
+.animatronic-card:focus .card-fade{
+    visibility: hidden;
+}
+
+.animatronic-card>.card-fade{
     background: linear-gradient( var(--dark-blue) 0%, rgba(255, 255, 255, 0.00) 100%);
     position:absolute;
     width: 165px;
@@ -50,4 +69,31 @@
 
 .animatronic-card:nth-child(1){
     background-image: url(../../images/funt-foxy-thumbnail.png);
+}
+
+.animatronic-card:nth-child(2){
+    background-image: url(../../images/fazbear-stamp.png);
+}
+
+.animatronic-card:nth-child(3){
+    background-image: url(../../images/fazbear-stamp.png);
+}
+
+.animatronic-card:nth-child(4){
+    background-image: url(../../images/fazbear-stamp.png);
+}
+
+.animatronic-card:nth-child(5){
+    background-image: url(../../images/fazbear-stamp.png);
+}
+
+.background-fade{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(255, 255, 255, 0.00) 50%, var(--funtime-foxy-color) 100%);
+}
+
+.background-fade.right{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 50%, var(--funtime-foxy-color) 100%);
 }
