@@ -1,10 +1,25 @@
+let currentIndex = 0
+
+function previousCard() {
+    currentIndex = (currentIndex - 1 + 5) % 5;
+    changeAnimatronic(currentIndex);
+}
+
+function nextCard() {
+    currentIndex = (currentIndex + 1) % 5;
+    changeAnimatronic(currentIndex);
+}
+
+
 function changeAnimatronic(index) {
+    currentIndex = index
+
     const fullbody = [
-        './circus-baby-fullbody.png',
-        './funt-foxy-fullbody.png',
-        './ballora-fullbody.png',
-        './funt-freddy-fullbody.png',
-        './bonbon-fullbody.png',
+        './assets/images/circus-baby-fullbody.png',
+        './assets/images/funt-foxy-fullbody.png',
+        './assets/images/ballora-fullbody.png',
+        './assets/images/funt-freddy-fullbody.png',
+        './assets/images/bonbon-fullbody.png',
     ];
     const names = [
         'Circus Baby',
@@ -51,6 +66,11 @@ function changeAnimatronic(index) {
 
     const backgroundFade = document.getElementById('background-fade');
     const backgroundFadeRight = document.getElementById('background-fade-right');
+    
+    const cardsSection = document.querySelector('.cards-section');
+    const selectedCard = cardsSection.children[index];
+
+    selectedCard.style.order = '0';
 
     animatronicFullbody.src = fullbody[index];
     animatronicName.innerText = names[index];
