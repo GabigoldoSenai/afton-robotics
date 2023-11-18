@@ -1,6 +1,6 @@
 .info{
-    width: 100vw;
-    height: 340px;
+    width: 100%;
+    height: auto;
     background: linear-gradient(90deg, var(--dark-blue) 0%, var(--blue) 25%, var(--blue) 75%, var(--dark-blue) 100%);
     display:flex;
     gap: 40px;
@@ -26,3 +26,4 @@
     flex-direction: column;
     gap: 30px;
 }
+

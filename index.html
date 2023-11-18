@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afton Robotics, LLC ©</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Orbitron:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="assets/css/shared.css">
     <link rel="icon" href="./assets/images/logo-100px.svg" />
 </head>
+
 <body>
     <nav class="navbar">
-            <ul>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#about-us" class="nav-link">About us</a></li>
-                <li><a href="#home" class="nav-link">
-                <img src="assets/images/logo-100px.svg" class="logo-img" alt="Home"></a></li>
-                <li><a href="#join-us" class="nav-link">Join us</a></li>
-                <li><a href="#faq" class="nav-link">FAQ's</a></li>
-            </ul>
+        <ul>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#about-us" class="nav-link">About us</a></li>
+            <li><a href="#home" class="nav-link">
+                    <img src="assets/images/logo-100px.svg" class="logo-img" alt="Home"></a></li>
+            <li><a href="#join-us" class="nav-link">Join us</a></li>
+            <li><a href="#faq" class="nav-link">FAQ's</a></li>
+        </ul>
     </nav>
 
     <main class="home" id="home">
         <video autoplay muted loop class="afton-robotics-mp4">
             <source src="assets/images/AftonRobotics_nologo.mp4" type="video/mp4">
         </video>
-        
+
         <section class="content-section">
             <article class="text-group">
                 <h3>Catch new costumers with</h3>
                 <h1>FUNTIME!</h1>
-                <p>Afton Robotics LLC new technology always with you to improve your Bussiness!</p>         
+                <p>Afton Robotics LLC new technology always with you to improve your Bussiness!</p>
             </article>
 
             <section class="btn-section">
-                <button class="action-btn" onclick="document.getElementById('join-us').scrollIntoView()">BE A PARTNER</button>
+                <button class="action-btn" onclick="document.getElementById('join-us').scrollIntoView()">BE A
+                    PARTNER</button>
                 <button class="info-btn" onclick="document.getElementById('faq').scrollIntoView()">
                     <span class="btn-text">KNOW MORE</span>
                     <span class="material-symbols-outlined">
-                            chevron_right
-                        </span>
+                        chevron_right
+                    </span>
 
                 </button>
             </section>
@@ -54,91 +59,99 @@
             <img src="assets/images/fazbear-stamp.png" alt="">
             <article>
                 <h2>Did you know?</h2>
-                <p>Afton’s animatronics has been used by stablishments such as Freddy Fazbear’s Family Diner since 80’s. Over the decades, these animatronics have become synonymous with immersive and captivating experiences, leaving an indelible mark on the cultural landscape of family entertainment.</p>
+                <p>Afton’s animatronics has been used by stablishments such as Freddy Fazbear’s Family Diner since 80’s.
+                    Over the decades, these animatronics have become synonymous with immersive and captivating
+                    experiences, leaving an indelible mark on the cultural landscape of family entertainment.</p>
             </article>
         </section>
     </div>
 
     <div class="services" id="services">
+
+        <div class="animatronic-fullbody">
+            <img id="animatronic-fullbody" src="./assets/images/circus-baby-fullbody.png" alt="">
+        </div>
+        
         <section class="content-section">
             <section class="header">
                 <h2>Meet our animatronics!</h2>
-                <button class="arrow-btn" id="btn-previous" onclick="previousCard()"><span class="material-symbols-outlined">
-                    chevron_left
+                <button class="arrow-btn" id="btn-previous" onclick="previousCard()"><span
+                        class="material-symbols-outlined">
+                        chevron_left
                     </span></button>
                 <button class="arrow-btn" id="btn-next" onclick="nextCard()"><span class="material-symbols-outlined">
-                    navigate_next
+                        navigate_next
                     </span></button>
             </section>
 
             <section class="cards-section">
-                <button class="animatronic-card" id="funtime-foxy-card">
+                <div name="funtime-foxy" class="animatronic-card" onclick="changeAnimatronic(0)">
                     <div class="card-fade"></div>
-                </button>
+                </div>
 
-                <button class="animatronic-card" id="funtime-foxy-card">
+                <div name="funtime-freddy" class="animatronic-card" onclick="changeAnimatronic(1)">
                     <div class="card-fade"></div>
-                </button>
+                </div>
 
-                <button class="animatronic-card">
+                <div name="bonbon" class="animatronic-card" onclick="changeAnimatronic(2)">
                     <div class="card-fade"></div>
-                </button>
+                </div>
 
-                <button class="animatronic-card">
+                <div name="ballora" class="animatronic-card" onclick="changeAnimatronic(3)">
                     <div class="card-fade"></div>
-                </button>
+                </div>
 
-                <button class="animatronic-card">
+                <div name="circus baby" class="animatronic-card" onclick="changeAnimatronic(4)">
                     <div class="card-fade"></div>
-                </button>
+                </div>
             </section>
-            <span class="horizontal-line"></span>
-            
+
             <section class="text-section">
-                <hr>    
+                
                 <article class="resume">
-                    <div class="funtime-foxy">
-                        <h2>Funtime Foxy</h2>
-                        <p>Funtime Foxy is an animatronic character known for its playful and entertaining demeanor. With its charming appearance and versatile skills, Funtime Foxy stands out as a highlight in the world of animatronic entertainment.</p>
-                    </div>
+                    <h2 id="animatronic-name">Circus Baby</h2>
+                    <p id="animatronic-resume">This is the first card</p>
                 </article>
 
 
                 <article class="skills">
                     <h2>Skills</h2>
                     <ul>
-                        <li>Charming Appearance</li>
-                        <li>Interactive Performances</li>
-                        <li>Motion Sensing Prowess</li>
+                        <li id="skill1">skill 1</li>
+                        <li id="skill2">skill 2</li>
+                        <li id="skill3">skill 3</li>
                     </ul>
                 </article>
             </section>
-
-            <span class="funtime-foxy"></span>     
         </section>
 
-        <span class="background-fade right"></span>
-        <span class="background-fade bottom"></span>
+        <span class="background-fade right" id="background-fade"></span>
+        <span class="background-fade bottom" id="background-fade-right"></span>
     </div>
 
     <div class="about-us" id="about-us">
-    <section class="content-section">
-        <section class="william-frame">
-                <img src="assets/images/william-afton.png" alt="I always come back">
+        <section class="content-section">
+            <section class="william-frame">
+                <img class="william-img" src="assets/images/william-afton.png" alt="I always come back">
                 <h2 class="william-name">William Afton</h2>
-        </section>
+            </section>
 
-        <section class="text-frame">
-            <article>
-                <img src="assets/images/style-frame.png" alt="">
-                <h2>About us</h2>
-                <hr>
-                <p>William Afton, a renowned entrepreneur, extends his influence beyond business success through philanthropy, actively supporting educational programs. Afton Robotics, under his guidance, not only entertains but also serves as a beacon of inspiration for those pushing the boundaries of entertainment technology.</p>
-                
-                <p>His commitment to excellence shines in the meticulous design and engineering of his animatronic creations, seamlessly blending advanced robotics with artistic creativity. Fortunately, just like his creations, he springs into action and always comes back with innovations!</p>
-            </article>
+            <section class="text-frame">
+                <article>
+                    <img src="assets/images/style-frame.png" alt="">
+                    <h2>About us</h2>
+                    <hr>
+                    <p>William Afton, a renowned entrepreneur, extends his influence beyond business success through
+                        philanthropy, actively supporting educational programs. Afton Robotics, under his guidance, not
+                        only entertains but also serves as a beacon of inspiration for those pushing the boundaries of
+                        entertainment technology.</p>
+
+                    <p>His commitment to excellence shines in the meticulous design and engineering of his animatronic
+                        creations, seamlessly blending advanced robotics with artistic creativity. Fortunately, just
+                        like his creations, he springs into action and always comes back with innovations!</p>
+                </article>
+            </section>
         </section>
-    </section>
 
     </div>
 
@@ -149,43 +162,54 @@
                     <img src="assets/images/style-frame.png" alt="">
                     <h2>Join us as a Partner!</h2>
                     <hr>
-                    <p>Your participation as a partner is not just a financial investment but an exclusive entry to witness firsthand the innovations that will shape tomorrow.</p>
+                    <p>Your participation as a partner is not just a financial investment but an exclusive entry to
+                        witness firsthand the innovations that will shape tomorrow.</p>
 
-                    <p>Furthermore, as part of the Afton Robotics family, you will have access to exclusive events, private demonstrations, and the opportunity to interact directly with the behind-the-scenes of our animatronic creations.</p> 
-                        
-                    <p>Together, we can build a future where imagination meets technology, providing unforgettable experiences for generations to come.</p>
-                    
-                    <p>His commitment to excellence shines in the meticulous design and engineering of our animatronic creations, seamlessly blending advanced robotics with artistic creativity. Fortunately, just like his creations, he springs into action and always comes back with innovations!</p>
+                    <p>Furthermore, as part of the Afton Robotics family, you will have access to exclusive events,
+                        private demonstrations, and the opportunity to interact directly with the behind-the-scenes of
+                        our animatronic creations.</p>
+
+                    <p>Together, we can build a future where imagination meets technology, providing unforgettable
+                        experiences for generations to come.</p>
+
+                    <p>His commitment to excellence shines in the meticulous design and engineering of our animatronic
+                        creations, seamlessly blending advanced robotics with artistic creativity. Fortunately, just
+                        like his creations, he springs into action and always comes back with innovations!</p>
                 </article>
 
                 <section class="btn-section">
-                    <button class="action-btn" onclick="document.getElementById('join-us').scrollIntoView()">BE A PARTNER</button>
+                    <button class="action-btn" onclick="document.getElementById('join-us').scrollIntoView()">BE A
+                        PARTNER</button>
                     <button class="info-btn" onclick="document.getElementById('faq').scrollIntoView()">
                         <span class="btn-text">KNOW MORE</span>
                         <span class="material-symbols-outlined">
-                                chevron_right
-                            </span>
-    
+                            chevron_right
+                        </span>
+
                     </button>
                 </section>
             </section>
-        </section>        
+        </section>
     </div>
-    
+
     <div class="faq" id="faq">
         <section class="content-section">
-                <div class="faq-card">
-                    <p>Question Lorem Ipsum sit dolor?</p>
-                    <button class="btn-more"><span class="material-symbols-outlined">
+            <div class="faq-card">
+                <p>Question Lorem Ipsum sit dolor?</p>
+                <button class="btn-more"><span class="material-symbols-outlined">
                         add
-                        </span>
-                    </button>
-                    <button class="btn-less"><span class="material-symbols-outlined">
+                    </span>
+                </button>
+                <button class="btn-less"><span class="material-symbols-outlined">
                         remove
-                        </span></button>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim aliquam est. Curabitur lobortis porttitor tristique. Ut aliquam porta ex ut vehicula. Suspendisse faucibus sodales mauris, in posuere nisi blandit id. Aliquam mauris magna, pretium in eros sit amet, laoreet sodales lacus. <br>
-                        Suspendisse non dapibus erat. Suspendisse cursus mauris ipsum, a molestie tellus volutpat sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                </div>
+                    </span></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim aliquam est. Curabitur
+                    lobortis porttitor tristique. Ut aliquam porta ex ut vehicula. Suspendisse faucibus sodales mauris,
+                    in posuere nisi blandit id. Aliquam mauris magna, pretium in eros sit amet, laoreet sodales lacus.
+                    <br>
+                    Suspendisse non dapibus erat. Suspendisse cursus mauris ipsum, a molestie tellus volutpat sed. Class
+                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
         </section>
     </div>
 
@@ -193,6 +217,7 @@
 
     </footer>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
+
 </html>

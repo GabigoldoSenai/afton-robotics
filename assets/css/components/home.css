@@ -1,5 +1,5 @@
 .home{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display:flex;
     align-content: center;
@@ -14,19 +14,11 @@
     z-index:-1;
     object-fit: cover;
     height: 110%;
-    width: 100vw;
+    width: 100%;
 }
 
 h1{
     font-size: 80px;
-}
-
-.content-section{
-    display:flex;
-    margin: 0 10%;
-    justify-content: center;
-    gap: 40px;
-    z-index: 1;
 }
 
 .home>.content-section{
