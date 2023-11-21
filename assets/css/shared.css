@@ -38,6 +38,8 @@ body{
     background-color: var(--dark-blue);
 }
 
+
+
 ::selection{
     background-color: var(--lavender);
     color: var(--white-font);
