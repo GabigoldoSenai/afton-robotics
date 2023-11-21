@@ -4,6 +4,12 @@
     background: linear-gradient(90deg, var(--dark-blue) 0%, var(--blue) 25%, var(--blue) 78.12%, var(--dark-blue) 97.92%);
 }
 
-.william-img{
-    height: 100px;
+.img-frame{
+    height: 480px;
+    width: 430px;
+    overflow: hidden;
+}
+
+.style-frame{
+    display:absolute;
 }
