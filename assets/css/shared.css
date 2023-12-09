@@ -41,7 +41,7 @@ body{
 
 
 ::selection{
-    background-color: var(--lavender);
+    background-color: var(--baby-blue-opacity);
     color: var(--white-font);
 }
 
@@ -65,7 +65,7 @@ p, a, li, button{
     transition:all .1s;
 }
 
-h1,h2,h3,p,a,li, button{
+h1,h2,h3,p,a,li, button, hr{
     color:var(--white-font);
     text-shadow: 0px 0px 15px var(--blue);
     -webkit-text-stroke: 1px var(--baby-blue-opacity);

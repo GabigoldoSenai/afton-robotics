@@ -1,5 +1,41 @@
 .join-us{
     height:100vh;
     width: 100%;
-    background: linear-gradient(90deg, var(--dark-blue) 0%, var(--blue) 25%, var(--blue) 78.12%, var(--dark-blue) 97.92%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, var(--lavender) 100%), 
+    linear-gradient(90deg, var(--dark-blue) 0%, var(--blue) 25.52%, var(--blue) 78.12%, var(--dark-blue) 97.92%);
+    background: red;
+
+}
+
+.join-us > .content-section{
+    margin: 0 10%;
+    height: calc(100% - 110px);
+    display: flex;
+    align-items: center;
+}
+
+.join-us > .content-section > .img-frame{
+    height: 30vh;
+    width: auto;
+}
+
+.join-us > .content-section > .style-frame{
+    position: absolute;
+    left: 10%;
+    width: 525px;
+    height: 60vh;
+    margin-top: -3%;
+}
+
+.join-us > .content-section > .text-frame{
+    position:absolute;
+    left: 10%;
+    width: 440px;
+    padding: 40px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+    flex-direction: column;
 }

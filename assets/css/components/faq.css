@@ -3,3 +3,8 @@
     width: 100%;
     background: var(--lavender);
 }
+
+.faq > .content-section{
+    margin: 0;
+    height: 50%;
+}
