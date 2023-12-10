@@ -1,9 +1,8 @@
 .join-us{
-    height:100vh;
+    height:110vh;
     width: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, var(--lavender) 100%), 
     linear-gradient(90deg, var(--dark-blue) 0%, var(--blue) 25.52%, var(--blue) 78.12%, var(--dark-blue) 97.92%);
-    background: red;
 
 }
 
@@ -15,27 +14,30 @@
 }
 
 .join-us > .content-section > .img-frame{
-    height: 30vh;
-    width: auto;
+    width: 30vw;
+    margin-left:60%;
 }
 
 .join-us > .content-section > .style-frame{
     position: absolute;
     left: 10%;
-    width: 525px;
-    height: 60vh;
-    margin-top: -3%;
+    width: 42%;
+    height: 95vh;
+    margin-top: 7%;
+    background-color: var(--baby-blue-opacity);
 }
 
 .join-us > .content-section > .text-frame{
-    position:absolute;
-    left: 10%;
-    width: 440px;
+    position: absolute;
+    left: 12%;
+    width: 33%;
     padding: 40px;
     height: 50vh;
-    display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -5%;
+    margin-top: 6%;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
 }

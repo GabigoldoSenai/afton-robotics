@@ -46,32 +46,48 @@ function changeAnimatronic(index) {
         'Helpy'
     ];
     const resumes = [
-        'This is the first card.',
-        'This is the second card.',
-        'This is the third card.',
-        'This is the fourth card',
-        'This is the fifth card'
+        'Circus Baby is a featured animatronic known for its multisensory entertainment capabilities. With a unique blend of enchanting music, immersive lighting, and surprising interactions, Circus Baby offers a captivating and memorable experience for audiences.',
+        'Funtime Foxy stands out with its advanced social interaction skills. From engaging conversations to interactive games, Funtime Foxy enhances buyer appeal by providing a friendly and personalized experience, making it a sought-after animatronic.',
+        'Ballora is recognized for her elegant and captivating dance skills. With graceful performances, Ballora appeals to audiences seeking sophisticated and visually stunning entertainment, making her an ideal choice for events and venues that prioritize elegance.',
+        "Funtime Freddy and his puppet Bon-Bon form a modular entertainment ensemble. Funtime Freddy's performances are enriched by the collaborative efforts of his little bunny, offering a seamless blend of synchronized movements and interactive engagements for diverse entertainment settings.",
+        "Autonomous hand puppet with AI capabilities, enhancing Funtime Freddy's performances through synchronized movements and interactive engagements with the audience.",
+        "Miniaturized animatronic accessory designed for surprise interactions and audience engagement during Funtime Freddy's performances, featuring enhanced agility and stealth capabilities.",
+        "Modular animatronic units known for their crowd management and audience interaction capabilities. They are equipped with advanced sensors and responsive programming, contributing to their effectiveness in various entertainment settings.",
+        "Compact animatronic units designed for entertainment during Ballora's performances. Their enhanced agility and stability capabilities make them well-suited for adding a dynamic element to the entertainment experience.",
+        "Helpful and compact animatronic designed for assisting in various tasks within the Fazbear's franchise. With its responsive programming and user-friendly design, Helpy ensures efficient crowd management and audience interaction during events."
     ];
     const skills1 = [
-        'Circus Baby skill1',
-        'Funt-foxy skill1',
-        'Ballora skill1',
-        'Funt-freddy skill1',
-        'Bonbon skill1'
+        'Internal ice cream dispenser',
+        'Light activation sensor',
+        'Audio activation sensor',
+        'Parental tracking',
+        'Real-time interactive responses and assistance',
+        'Compact micro-entertainment module',
+        'Swarm coordination algorithm',
+        'Compact designs',
+        'User assistance'
     ];
     const skills2 = [
-        'Circus Baby skill2',
-        'Funt-foxy skill2',
-        'Ballora skill2',
-        'Funt-freddy skill2',
-        'Bonbon skill2'
+        'Song databank',
+        'Parental voice sync & replay',
+        'Balance/stability',
+        'Proximity Sensor',
+        'Dynamic companion subroutine',
+        'Designed for surprise interactions',
+        "Enhace Circus Baby's performances",
+        'Impressive group performances',
+        'Provide helpful guidance'
     ];
     const skills3 = [
-        'Circus Baby skill3',
-        'Funt-foxy skill3',
-        'Ballora skill3',
-        'Funt-freddy skill3',
-        'Bonbon skill3'
+        'Emergency stop',
+        'Variable scent release',
+        'Collision sensor',
+        'Storage tank',
+        "Enhance Funtime Freddy's performances",
+        'Audience engagement',
+        'Crowd management',
+        "Enhace Ballora's performances",
+        'Interactive support'
     ]
 
     const animatronicFullbody = document.getElementById('animatronic-fullbody');

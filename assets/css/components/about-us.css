@@ -12,8 +12,8 @@
 }
 
 .about-us > .content-section >.img-frame{
-    width: 30vw;
-    height: 50vh;
+    width: 398px;
+  height: 324px;
     background-image: url(../../images/william-afton.png);
     background-size: cover;
     background-position: center;
@@ -23,22 +23,23 @@
 
 .william-name{
     position: relative;
-    top: -50px;
+    bottom: 50px;
     left: 7vw;
 }
 
 .about-us > .content-section > .style-frame{
     position: absolute;
     right: 10%;
-    width: 525px;
-    height: 60vh;
-    margin-top: -3%;
+    width: 37%;
+    height: 75vh;
+    margin-top: -7%;
+    background-color: var(--baby-blue-opacity);
 }
 
 .about-us > .content-section > .text-frame{
     position:absolute;
-    right: 10%;
-    width: 440px;
+    right: 12%;
+    width: 27%;
     padding: 40px;
     height: 50vh;
     display: flex;

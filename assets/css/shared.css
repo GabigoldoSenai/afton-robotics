@@ -5,7 +5,6 @@
 @import url(components/services.css);
 @import url(components/about-us.css);
 @import url(components/join-us.css);
-@import url(components/faq.css);
 @import url(components/footer.css);
 
 :root{
@@ -51,16 +50,16 @@ h1,h2,h3{
 }
 
 h2{
-    font-size:30px;
+    font-size:2rem;
 }
 
 h3{
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 p, a, li, button{
     font-family:'Cute Font', sans-serif;
-    font-size: 25px;
+    font-size: 1.3rem;
     text-decoration: none;
     transition:all .1s;
 }

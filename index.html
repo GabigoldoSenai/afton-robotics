@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afton Robotics, LLC ©</title>
+    <script src="https://kit.fontawesome.com/4f5c786c9e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Orbitron:wght@700;800&display=swap"
@@ -23,7 +24,6 @@
             <li><i class="nav-link">
                     <img src="assets/images/logo-100px.svg" class="logo-img" alt="Home"></i></li>
             <li><a href="#join-us" class="nav-link">Join us</a></li>
-            <li><a href="#faq" class="nav-link">FAQ's</a></li>
         </ul>
     </nav>
 
@@ -42,7 +42,7 @@
             <section class="btn-section">
                 <button class="action-btn" onclick="document.getElementById('join-us').scrollIntoView()">BE A
                     PARTNER</button>
-                <button class="info-btn" onclick="document.getElementById('faq').scrollIntoView()">
+                <button class="info-btn" onclick="document.getElementById('services').scrollIntoView()">
                     <span class="btn-text">KNOW MORE</span>
                     <span class="material-symbols-outlined">
                         chevron_right
@@ -71,7 +71,7 @@
         <div class="animatronic-fullbody">
             <img id="animatronic-fullbody" src="./assets/images/circus-baby-fullbody.png" alt="">
         </div>
-        
+
         <section class="content-section">
             <section class="header">
                 <h2>Meet our animatronics!</h2>
@@ -83,25 +83,25 @@
                         navigate_next
                     </span></button>
             </section>
-            
+
             <section class="carousel-container">
                 <section class="cards-section">
                     <div name="circus baby" class="animatronic-card" onclick="changeAnimatronic(0)">
                         <div class="card-fade"></div>
                     </div>
-    
+
                     <div name="funtime-foxy" class="animatronic-card" onclick="changeAnimatronic(1)">
                         <div class="card-fade"></div>
                     </div>
-    
+
                     <div name="ballora" class="animatronic-card" onclick="changeAnimatronic(2)">
                         <div class="card-fade"></div>
                     </div>
-    
+
                     <div name="funtime-freddy" class="animatronic-card" onclick="changeAnimatronic(3)">
                         <div class="card-fade"></div>
                     </div>
-    
+
                     <div name="bonbon" class="animatronic-card" onclick="changeAnimatronic(4)">
                         <div class="card-fade"></div>
                     </div>
@@ -123,9 +123,9 @@
                     </div>
                 </section>
             </section>
-            
+
             <section class="text-section">
-                
+
                 <article class="resume">
                     <h2 id="animatronic-name">Circus Baby</h2>
                     <p id="animatronic-resume">This is the first card</p>
@@ -161,7 +161,7 @@
                         philanthropy, actively supporting educational programs. Afton Robotics, under his guidance, not
                         only entertains but also serves as a beacon of inspiration for those pushing the boundaries of
                         entertainment technology.</p>
-
+                    <br>
                     <p>His commitment to excellence shines in the meticulous design and engineering of his animatronic
                         creations, seamlessly blending advanced robotics with artistic creativity. Fortunately, just
                         like his creations, he springs into action and always comes back with innovations!</p>
@@ -173,29 +173,30 @@
 
     <div class="join-us" id="join-us">
         <section class="content-section">
-            <img src="assets/images/style-frame.png" alt="">
+            <img src="assets/images/style-frame.png" class="style-frame" alt="">
             <section class="text-frame">
                 <article>
-                    
-                    <h2>Join us as a Partner!</h2>
-                    <hr>
-                    <p>Your participation as a partner is not just a financial investment but an exclusive      entry to witness firsthand the innovations that will shape tomorrow.</p>
 
+                    <h2 class="title-text">Join us as a Partner!</h2>
+                    <p>Your participation as a partner is not just a financial investment but an exclusive entry to
+                        witness firsthand the innovations that will shape tomorrow.</p>
+                    <br>
                     <p>Furthermore, as part of the Afton Robotics family, you will have access to exclusive events,
                         private demonstrations, and the opportunity to interact directly with the behind-the-scenes of
                         our animatronic creations.</p>
-
+                    <br>
                     <p>Together, we can build a future where imagination meets technology, providing unforgettable
                         experiences for generations to come.</p>
-
+                    <br>
                     <p>His commitment to excellence shines in the meticulous design and engineering of our animatronic
                         creations, seamlessly blending advanced robotics with artistic creativity. Fortunately, just
                         like his creations, he springs into action and always comes back with innovations!</p>
                 </article>
 
                 <section class="btn-section">
-                    <button class="action-btn" onclick="document.getElementById('join-us').scrollIntoView()">BE A PARTNER</button>
-                    <button class="info-btn" onclick="document.getElementById('faq').scrollIntoView()">
+                    <button class="action-btn" onclick="document.getElementById('join-us').scrollIntoView()">BE A
+                        PARTNER</button>
+                    <button class="info-btn" onclick="document.getElementById('services').scrollIntoView()">
                         <span class="btn-text">KNOW MORE</span>
                         <span class="material-symbols-outlined">
                             chevron_right
@@ -209,29 +210,31 @@
         </section>
     </div>
 
-    <div class="faq" id="faq">
-        <section class="content-section">
-            <div class="faq-card">
-                <p>Question Lorem Ipsum sit dolor?</p>
-                <button class="btn-more"><span class="material-symbols-outlined">
-                        add
-                    </span>
-                </button>
-                <button class="btn-less"><span class="material-symbols-outlined">
-                        remove
-                    </span></button>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim aliquam est. Curabitur
-                    lobortis porttitor tristique. Ut aliquam porta ex ut vehicula. Suspendisse faucibus sodales mauris,
-                    in posuere nisi blandit id. Aliquam mauris magna, pretium in eros sit amet, laoreet sodales lacus.
-                    <br>
-                    Suspendisse non dapibus erat. Suspendisse cursus mauris ipsum, a molestie tellus volutpat sed. Class
-                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            </div>
-        </section>
-    </div>
-
     <footer class="footer">
+        <nav class="footer-navbar">
+            <ul>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about-us" class="nav-link">About us</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#join-us" class="nav-link">Join us</a></li>
+            </ul>
+        </nav>
 
+        <div class="social-media">
+            <ul>
+                <li><a href="https://github.com/GabigoldoSenai" target="_blank" class="social-link">
+                        <i class="fa-brands fa-github-alt"></i>
+                    </a></li>
+                <li><a href="https://www.linkedin.com/in/let%C3%ADcia-g-soares-48173a28b/" target="_blank"
+                        class="social-link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a></li>
+                <li><a href="https://www.behance.net/letciagsoares" target="_blank" class="social-link">
+                        <i class="fa-brands fa-behance"></i>
+                    </a></li>
+            </ul>
+        </div>
+        <p>Fanmade with ♡ by @GabigoldoSenai</p>
     </footer>
 
     <script src="./js/app.js"></script>
